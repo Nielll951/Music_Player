@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Music Player</title>
+   <link href="style.css" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/c029127fac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="container">
+      <div class="music-player">
+         <nav>
+            <div class="circle">
+               <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+               <i class="fa-solid fa-bars"></i>
+            </div>
+         </nav>
+         <img class="song-img" src="img/thumbnail.png" alt="thumbnail image">
+         <h1>Vucchella</h1>
+         <p>Luciano Pavarotti</p>
+         <audio id="song">
+            <source src="media/song.mp3" type="audio/mp3">
+         </audio>
+         <input id="progress" type="range" value="0">
+         <div class="controls">
+            <div>
+               <i class="fa-solid fa-backward"></i>
+            </div>
+
+            <div onclick="playPause()">
+               <i class="fa-solid fa-play" id="ctrlIcon"></i>
+            </div>
+
+            <div>
+               <i class="fa-solid fa-forward"></i>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
